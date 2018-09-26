@@ -1,0 +1,47 @@
+
+<div class="paginaArquivos">
+
+  <div class="infoGeral" fxLayout="row">
+    <div fxFlex="">
+      <h6>Nome do Bucket</h6>
+      <div>{{ bucketNome }}</div>
+    </div>
+    
+    <div fxFlex="60px" class="upload">
+      <input type="file" (change)="upload($event)" #uploadInput />
+      <mat-icon (click)="uploadInput.click()">cloud_upload</mat-icon>
+    </div>
+    
+    <div fxFlex="">
+      <h6>Itens por página</h6>
+      <div class="itensPorPagina">
+        <mat-button-toggle-group [(ngModel)]="pagina" (change)="alterarPaginacao()">
+          <mat-button-toggle value="5">5</mat-button-toggle>
+          <mat-button-toggle value="10">10</mat-button-toggle>
+          <mat-button-toggle value="20">20</mat-button-toggle>
+          <mat-button-toggle value="50">50</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ======================================================================== -->
+  
+  <div class="listaArquivos">
+    <ul>
+      <li *ngFor="let item of arquivos" fxLayout="row">
+        <div class="nome" fxFlex="">{{ item.key }}</div>
+        <div class="acoes" fxFlex="110px" fxLayout="row">
+          <mat-icon fxFlex="" class="baixar" (click)="download( item )">cloud_download</mat-icon>
+          <mat-icon fxFlex="" class="editar">create</mat-icon>
+          <mat-icon fxFlex="" class="apagar" (click)="deletar( item )">clear</mat-icon>
+        </div>
+        <div class="info" fxFlex="100px" fxLayout="column">
+          <div fxFlex="">{{ item.size }} bytes</div>
+          <div fxFlex="">{{ item.lastModified.format('L') }}</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</div>

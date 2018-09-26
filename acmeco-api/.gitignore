@@ -1,0 +1,6 @@
+
+# Pasta com os arquivos compilados (finais)
+/target/
+
+# Arquivo criado pelo Spring ao ser executado (com o PID do processo)
+application.pid 

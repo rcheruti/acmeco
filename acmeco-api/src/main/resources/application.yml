@@ -1,0 +1,17 @@
+
+server:
+  port: 8080
+  # Caso as configs abaixo (de contexto) sejam alteradas, a tag "base" no
+  # código do Angular (no "header" de "index.html") também precisa ser alterada
+  context-path:         /
+  servlet.context-path: /
+
+# Abaixo estão as cnofigurações da aplicação,
+# sobreescreva essas configurações usando variáveis de ambiente
+config:
+  s3_region:        ""
+  s3_access_key_id: ""
+  s3_secret_key_id: ""
+  s3_bucket_padrao: ""
+  s3_delimitador_pastas: "/"
+  

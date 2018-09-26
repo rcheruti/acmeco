@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "acmeco-api",
+                "projectName": "acmeco-api",
+                "workingDirectory": "c:\\Users\\1513 MXTI\\Documents\\GIT\\AcmeCo\\acmeco-api",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "acmeco-api",
+                "projectName": "acmeco-api",
+                "workingDirectory": "c:\\Users\\1513 MXTI\\Documents\\GIT\\AcmeCo\\acmeco-api",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}

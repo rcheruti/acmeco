@@ -1,0 +1,8 @@
+
+config:
+  s3_region:        "sa-east-1"
+  s3_access_key_id: "AKIAJOR2VKAOQ4VFMYNA"
+  s3_secret_key_id: "m8YD8dehUitwA7aqGm98u/rtcWlDXM/grcai8MMT"
+  s3_bucket_padrao: "rcc-desafio-kernel"
+  s3_delimitador_pastas: "/"
+  
