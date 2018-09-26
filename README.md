@@ -48,7 +48,8 @@ Para o desenvolvimento foi utilizado o `VS Code`, tendo como principais plugins:
 - `Java Test Runner` da Microsoft
 - `Debugger for Java` da Microsoft
 - `Maven for Java` da Microsoft
-- `Lombok Annotations Support for VS Code` do Gabriel Basilio Brito 
+- `Lombok Annotations Support for VS Code` do Gabriel Basilio Brito  
+
 *O VS Code já fornece 'nativamente' um bom suporte para HTML, TypeScript e SASS.*
 *Já para Java o suporte é fraco. IDEs como Eclipse e IntelliJ são muito superiores, mas o Eclipse é muito pesado para carregar e lento para usar.*
 
