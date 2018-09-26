@@ -8,6 +8,7 @@ import {
   MatSelectModule ,
   MatButtonToggleModule ,
   MatIconModule ,
+  MatTooltipModule ,
   
   MAT_DATE_FORMATS ,
   } from '@angular/material';
@@ -33,6 +34,7 @@ let materialsModules = [
   MatSelectModule ,
   MatButtonToggleModule ,
   MatIconModule ,
+  MatTooltipModule ,
   MomentDateModule ,
 ];
 

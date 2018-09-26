@@ -4,6 +4,8 @@ import { HttpClient } from '@angular/common/http';
 import * as moment from 'moment';
 import { tap } from 'rxjs/operators';
 
+declare var window;
+
 @Injectable({
   providedIn: 'root'
 })
@@ -36,7 +38,7 @@ export class ArquivoService {
   }
   
   download(arquivo: string){
-    return this.http.get('/download', {  params: { arquivo: arquivo } } );
+    return window.open('/download?arquivo=' + encodeURIComponent(arquivo) );
   }
   
   deletar(...arquivos: string[]){

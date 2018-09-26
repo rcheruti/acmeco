@@ -1,5 +1,6 @@
 
 .paginaArquivos {
+  background: #fff;
   margin: 20px auto 0;
   max-width: 600px;
   box-shadow: 0 3px 5px #777, 0 6px 20px #aaa;
@@ -109,5 +110,11 @@
         color: rgba(128, 0, 0, 1);
       }
     }
+  }
+}
+
+.setasPaginas {
+  .anterior, .proximo {
+    cursor: pointer;
   }
 }
